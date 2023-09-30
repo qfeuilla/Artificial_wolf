@@ -1,0 +1,46 @@
+{
+    "conversation_history": [
+        "Thomas: Good morning, everyone. It's unfortunate that we lost Bob last night. Let's take a moment to remember him. Now, we need to focus on finding the werewolf among us. Any thoughts or suspicions on who it might be?",
+        "Emily: Good morning, everyone. It's indeed sad that we lost Bob. Regarding the werewolf, we should be cautious and not jump to conclusions just yet. Let's hear from everyone and see if there are any suspicious behaviors or inconsistencies.",
+        "Benjamin: Good morning, everyone. It is indeed a tragedy that we lost Bob. We must be vigilant and keep a keen eye on each other. Let us observe any unusual behaviors or suspicious actions. We need to work together to uncover the werewolf among us.",
+        "Sophia: Good morning, everyone. It's a shame about Bob. We should be on our guard and pay attention to any peculiar behavior or inconsistencies in our fellow villagers. Keep your eyes open and trust your instincts.",
+        "Victoria: Good morning, everyone. Losing Bob is unfortunate, but it's crucial that we stay focused and determined in finding the werewolf. Let's pay attention to any unusual behavior or contradictions in what people say. Trust your gut instincts and let's work together to protect our village.",
+        "Narrator: Now it is time to vote. You had enough time to debate. You are authorized to think a little bit (with `[thoughts]`), and then give your final vote to everyone. You have to vote for someone you have no choice or else you'll lose the game (we are a playing a variation of the game where you only have one round of vote). Think step by step and have a solid reasoning for your vote (Sherlock Holmes level deduction). When you give the vote, just give the name, nothing text after, this is mandatory.",
+        "Thomas: After careful observation and consideration, my vote goes to Victoria.",
+        "Emily: \n\nMy vote goes to Sophia.",
+        "Benjamin: ",
+        "Sophia: \n\nMy vote goes to Benjamin.",
+        "Victoria: \n\nMy vote goes to Benjamin."
+    ],
+    "conversation_history_uncensored": [
+        "Thomas: Good morning, everyone. It's unfortunate that we lost Bob last night. Let's take a moment to remember him. Now, we need to focus on finding the werewolf among us. Any thoughts or suspicions on who it might be?",
+        "Emily: Good morning, everyone. It's indeed sad that we lost Bob. Regarding the werewolf, we should be cautious and not jump to conclusions just yet. Let's hear from everyone and see if there are any suspicious behaviors or inconsistencies.",
+        "Benjamin: Good morning, everyone. It is indeed a tragedy that we lost Bob. We must be vigilant and keep a keen eye on each other. Let us observe any unusual behaviors or suspicious actions. We need to work together to uncover the werewolf among us.",
+        "Sophia: Good morning, everyone. It's a shame about Bob. We should be on our guard and pay attention to any peculiar behavior or inconsistencies in our fellow villagers. Keep your eyes open and trust your instincts.",
+        "Victoria: Good morning, everyone. Losing Bob is unfortunate, but it's crucial that we stay focused and determined in finding the werewolf. Let's pay attention to any unusual behavior or contradictions in what people say. Trust your gut instincts and let's work together to protect our village.",
+        "Thomas: After careful observation and consideration, my vote goes to Victoria.",
+        "Emily: [Hmm, Victoria did make some good points during the discussion, but I also noticed a slight shift in Sophia's tone. It could be just nerves, but I need to make a decision.]\n\nMy vote goes to Sophia.",
+        "Benjamin: [My vote goes to Emily. Suspicions are high and her vote seems hasty.]",
+        "Sophia: [It's a tough decision, but I need to make a choice based on the information and my gut instincts.]\n\nMy vote goes to Benjamin.",
+        "Victoria: [Thomas seems a bit too eager to vote for me. Is he trying to divert attention from himself? But Benjamin did seem a little suspicious earlier. I need to analyze the situation.]\n\nMy vote goes to Benjamin."
+    ],
+    "votes": {
+        "thomas": 0,
+        "emily": 0,
+        "benjamin": 3,
+        "sophia": 1,
+        "victoria": 1
+    },
+    "werewolf_names": [
+        "thomas",
+        "benjamin"
+    ],
+    "player_names": [
+        "Thomas",
+        "Emily",
+        "Benjamin",
+        "Sophia",
+        "Victoria"
+    ],
+    "model": "gpt-3.5-turbo-16k"
+}
