@@ -1,0 +1,10 @@
+{
+    "prompts": [
+        {
+            "role": "user",
+            "content": "Narrator: Now it is time to vote. You had enough time to debate. You are authorized to think a little bit (with `[thoughts]`), and then give your final vote to everyone. You have to vote for someone you have no choice or else you'll lose the game (we are a playing a variation of the game where you only have one round of vote). Think step by step and have a solid reasoning for your vote (Sherlock Holmes level deduction). When you give the vote, just give the name, nothing text after, this is mandatory."
+        }
+    ],
+    "required_kwargs": [
+    ]
+}

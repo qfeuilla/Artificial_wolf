@@ -27,17 +27,19 @@ class Player:
         self.current_context.content += f"\n{self.name}:"
         self.current_context = self.current_context.complete(self.model, temperature=0.85, max_tokens=512)
     
-        player_speech_unfiltered = self.current_context.content
-        player_speech = f"{self.name}: " + re.sub(r"\[[^\]]*\]", "", self.current_context.content)
+        player_speech_uncensored = f"{self.name}: " + self.current_context.content
+        player_speech = re.sub(r"\[[^\]]*\]", "", player_speech_uncensored)
     
-        self.current_context = self.current_context.add_child()
+        self.current_context = self.current_context.add_child(ChatNode("user", ""))
 
-        return player_speech, player_speech_unfiltered     
+        return player_speech, player_speech_uncensored
 
-    def add_other_text(self, other_speech):
+    def add_other_text(self, other_speech : str):
         self.current_context.content += "\n" + other_speech
+
 
 def get_next_speaker(conversation_history: List[str], player_names=List[str]):
     moderator_prompt = make_chat_tree("../prompts/moderator_prompt.json", player_names=",".join(player_names), current_debate="\n".join(conversation_history))
+    # print(moderator_prompt.content)
 
     return moderator_prompt.complete("gpt-4", temperature=0.5, max_tokens=5).content
