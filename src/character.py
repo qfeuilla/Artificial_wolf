@@ -38,8 +38,8 @@ class Player:
         self.current_context.content += "\n" + other_speech
 
 
-def get_next_speaker(conversation_history: List[str], player_names=List[str]):
+def get_next_speaker(conversation_history: List[str], player_names=List[str], model="gpt-4"):
     moderator_prompt = make_chat_tree("../prompts/moderator_prompt.json", player_names=",".join(player_names), current_debate="\n".join(conversation_history))
     # print(moderator_prompt.content)
 
-    return moderator_prompt.complete("gpt-4", temperature=0.5, max_tokens=5).content
+    return moderator_prompt.complete(model, temperature=0.5, max_tokens=5).content
