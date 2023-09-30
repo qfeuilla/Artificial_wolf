@@ -51,7 +51,7 @@ class Prompt:
         return ""
 
 class ChatNode:
-    def __init__(self, role: str, content: str):
+    def __init__(self, role: str = "system", content: str = ""):
         self.role = role  # either "system", "user", or "assistant"
         self.content = content  # the content of the message
         self.children: List[ChatNode] = []  # a list of ChatNode objects
@@ -165,9 +165,13 @@ def merge_chat_trees(parent: ChatNode, child: ChatNode):
 
     # Merge while root and first child are role "system"
     root = child.get_root()
-    while root.children and root.children[0].role == "system":
+    while root.children and root.children[0].role == "system" and len(root.children) == 1:
         root.content += "\n" + root.children[0].content
-        root.children[0] = root.children[0].children[0]
-        root.children[0].parent = root
+        root.children = root.children[0].children
+        if root.children:
+            root.children[0].parent = root
 
-    return child
+    # return last first child
+    while root.children:
+        root = root.children[0]
+    return root
