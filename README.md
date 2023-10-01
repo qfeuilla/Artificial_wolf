@@ -5,6 +5,7 @@
 Evaluation of the behavior of Language Model agents playing [the Werewolves of Millers Hollow (also known as Mafia)](https://en.wikipedia.org/wiki/Mafia_(party_game)).
 
 Previous games can be found in [/data](https://github.com/qfeuilla/wAIrwolf/tree/main/data) 
+
 Prompts can be modified in [/prompts](https://github.com/qfeuilla/wAIrwolf/tree/main/prompts) 
 
 ### Requirements
