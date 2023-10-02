@@ -19,5 +19,6 @@ export OPENAI_API_KEY=<your-api-key>
 - ✅ Variable number of villagers and werewolves
 - ✅ Custom prompts
 - ✅ Narrator choosing who speaks
+- ✅ Interactive mode to play against the AIs
 - 🚧 More roles (Cupid, seer, hunter...)
 
